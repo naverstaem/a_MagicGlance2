@@ -1753,6 +1753,12 @@ header .header__form .block__form .button--form span { position: relative; displ
 .action__result { padding: 20px 0; margin-top: 5px; border: 1px solid rgba(255, 255, 255, 0.25); font-size: 32px; color: #ffffff; text-align: center; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
 .action__result span { font-family: "open_sansbold"; font-weight: normal; font-style: normal; }
 
+.instruction { padding-top: 60px; padding-bottom: 85px; font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 14px; color: #2b2b2b; }
+.instruction .row > div:nth-child(1) { text-align: right; }
+.instruction .row:last-child > div:first-child { text-align: center; margin-top: 20px; }
+.instruction h2 { margin-bottom: 40px; }
+.instruction p { margin-top: 80px; }
+
 .about { *zoom: 1; background: url(../img/about_bg.png) center center no-repeat; padding-top: 90px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-bottom: 30px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .about:after { content: " "; display: table; clear: both; }
 .about .row:last-child { margin-top: 100px; }
@@ -1766,9 +1772,6 @@ header .header__form .block__form .button--form span { position: relative; displ
 .list li { font-family: "open_sanslight"; font-weight: normal; font-style: normal; position: relative; margin-top: 15px; }
 .list li span { font-family: "open_sansbold"; font-weight: normal; font-style: normal; }
 .list li:before { position: absolute; content: ""; top: 2px; left: -40px; }
-
-.instruction { background: url(../img/instruction_bg.png) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-top: 60px; padding-bottom: 85px; }
-.instruction h2 { color: white; }
 
 .features { padding-top: 70px; padding-bottom: 50px; }
 .features h2 { line-height: 1em; }
