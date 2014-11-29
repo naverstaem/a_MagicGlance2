@@ -256,6 +256,56 @@ header
   &__top-text
     padding-top: 0
 
+
+.components
+  padding-top: 50px
+  padding-bottom: 60px
+  h2
+    color: #000
+    +osb
+    margin-bottom: 40px
+    font-size: 48px
+    text-align: center
+  h3
+    color: #000
+    +osl
+    text-align: center
+    margin-bottom: 15px
+    font-size: 48px
+  h4
+    color: #000
+    +osl
+    font-size: 18px
+    text-align: center
+
+  &__items
+    margin-top: 50px
+    .item
+      padding-top: 25px
+      .item__img
+        margin-right: 0
+        //width: 224px
+        text-align: center
+        +border-radius(50%)
+        +box-shadow(0 16px 40px -20px black)
+        img
+          +border-radius(50%)
+      .item__text
+        text-align: left
+        vertical-align: top
+        margin-top: 0
+        color: #000
+        h5
+          +osb
+          font-size: 20px
+          margin-top: 0
+        p
+          +osl
+          font-size: 13px
+
+
+
+
 .about
   +clr
   background: url(../img/about_bg.png) center center no-repeat
@@ -305,53 +355,6 @@ header
       top: 2px
       left: -40px
 
-.components
-  padding-top: 60px
-  padding-bottom: 60px
-
-
-  h2
-    margin-bottom: 50px
-  h3
-    +rm
-    font-size: 25px
-    text-align: center
-    margin-bottom: 15px
-  h4
-    +osl
-    font-size: 18px
-    text-align: center
-    span
-      +rm
-  &__items
-    margin-top: 30px
-    hr
-      width: 90%
-      height: 0
-      border: none
-      border-bottom: solid 1px rgb(235,235,235)
-
-    .item
-      padding-top: 25px
-      .item__img
-        margin-right: 0
-        //width: 224px
-        height: 174px
-        text-align: center
-      .item__text
-        text-align: left
-        vertical-align: top
-        margin-top: 20px
-        h5
-          +rm
-          font-size: 20px
-        p
-          +osl
-          font-size: 14px
-          color: #4b4b4b
-  .item--right
-    .item__text
-      text-align: right
 
 .instruction
   background: url(../img/instruction_bg.png) no-repeat center center
