@@ -799,42 +799,26 @@ header
 
 footer
   box-sizing: border-box
-  background: url(../img/footer_bg.png)
-  +cover
+  background: rgb(0,36,101)
   padding: 40px 0
-  font-size: 14px
+  font-size: 13px
   position: relative
-  color: #cdcdd5
-
+  color: #d0dbef
+  +box-shadow(inset 0 30px 70px -70px black)
   .footer__left
     float: left
     text-align: left
+    +osl
     a
       display: block
-      +osl
-      color: #cdcdd5
+      color: #d0dbef
       text-decoration: none
       &:hover
         text-decoration: underline
   .footer__right
+    +osl
     float: right
     text-align: right
-  .footer__up
-    position: absolute
-    top: -24px
-    left: 50%
-    +transform(translateX(-50%))
-    content: ""
-    background: #c557ab
-    width: 49px
-    height: 49px
-    +border-radius(50%)
-    &:after
-      position: absolute
-      content: ""
-      top: 50%
-      left: 50%
-      +transform(translate(-50%,-50%))
 
 
 
