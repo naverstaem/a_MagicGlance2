@@ -1855,14 +1855,14 @@ header .header__form .block__form .button--form span { position: relative; displ
 .reviews__body-text .quotes span { display: inline-block; height: 0; max-width: 170px; border-bottom: solid 1px rgba(0, 0, 0, 0.1); vertical-align: middle; width: 25%; }
 .reviews__body-text .quotes img { padding: 0 25px; }
 
-.about { *zoom: 1; background: url(../img/about_bg.png) center center no-repeat; padding-top: 90px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-bottom: 30px; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.about:after { content: " "; display: table; clear: both; }
-.about .row:last-child { margin-top: 100px; }
-.about .about__img { margin-top: -240px; margin-left: -175px; z-index: 0; }
-.about .about__img--second { display: inline-block; position: static; margin-left: -100px; }
-.about .about__text { display: inline-block; color: #ffffff; vertical-align: top; position: relative; z-index: 1; }
-.about .about__text h3 { font-family: "open_sansbold"; font-weight: normal; font-style: normal; font-size: 23px; margin-bottom: 15px; }
-.about .about__text--second { margin-top: -240px; }
+.work { padding-top: 40px; }
+.work .row { position: relative; }
+.work .row > div:after { position: absolute; border: solid 1px rgba(92, 206, 206, 0.1); top: 134px; width: 100%; left: 0; height: 0; content: ""; }
+.work__item { margin-top: 50px; text-align: center; }
+.work__img { display: inline-block; text-align: center; min-height: 97px; }
+.work p { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 14px; color: #4e4e4e; text-align: left; margin-left: 30px; margin-top: 15px; }
+.work p span { display: inline-block; }
+.work p .digit { font-size: 39px; color: #5ccece; position: relative; font-family: "open_sansregular"; margin-right: 5px; }
 
 .header--bottom { background: url(../img/header--bottom_bg.jpg) center center no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; padding-top: 500px; }
 .header--bottom .intro__form--bottom { position: relative; top: 135px; }
