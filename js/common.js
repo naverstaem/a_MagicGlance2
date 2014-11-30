@@ -43,6 +43,7 @@ head.ready(function() {
     $('#form3').validate();
     $('#form4').validate();
     $('#form5').validate();
+    $('#form6').validate();
 
     $("#form5").ajaxForm({
         success: function () {

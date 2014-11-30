@@ -139,7 +139,7 @@
                                 <div class="block__form">
 
                                     <form id="form1" action="#" method="post">
-                                        <button class="btn button--form">заказать<span></span></button>
+                                        <a href="#order" class="fancybox btn button--form">заказать<span></span></a>
                                     </form>
 
                                 </div>
@@ -830,7 +830,7 @@
                                 <div class="block__form">
 
                                     <form id="form2" action="#" method="post">
-                                        <button class="btn button--form">заказать<span></span></button>
+                                        <a href="#order" class="fancybox btn button--form">заказать<span></span></a>
                                     </form>
 
                                 </div>
@@ -936,7 +936,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="footer__left">
-                    <a href="#">Политика
+                    <a href="#thanks" class="fancybox">Политика
                         конфиденциальности.</a>
                     <a href="#">Партнерская
                         программа.</a>
@@ -955,21 +955,47 @@
 
 <div class="callback" id="callback"
      style="display: none;">
-    <h2>Заказать звонок</h2>
+    <h2>Закажите звонок</h2>
 
     <form action="#" method="post" id="form5">
-        <input type="text" name="name"
-               class="name required"
-               placeholder="Ваше имя">
-        <input type="text" name="phone"
-               class="phone required"
-               placeholder="Ващ телефон">
-        <button class="btn button--callback">заказать
-            товар
-        </button>
+        <input type="text"
+               name="name"
+               placeholder="Введите имя"
+               required/>
+        <input type="text"
+               name="phone"
+               placeholder="Введите телефон"
+               required/>
+        <button class="btn btn--callback">
+            Заказать<span></span></button>
     </form>
 
 </div>
+
+<div class="order" id="order"
+     style="display: none;">
+    <h2>Закажите<br>
+        Magic Glance INTENSIVE</h2>
+
+    <form action="#" method="post" id="form6">
+        <input type="text"
+               name="name"
+               placeholder="Введите имя"
+               required/>
+        <input type="text"
+               name="phone"
+               placeholder="Введите телефон"
+               required/>
+        <input type="text"
+               name="email"
+               placeholder="Введите e-mail"
+               required/>
+        <button class="btn btn--callback">
+            Заказать<span></span></button>
+    </form>
+
+</div>
+
 <div class="thanks" id="thanks" style="display: none;">
     <div class="thanks__img">
         <img src="img/ok.png" alt="thanks"/>
@@ -977,7 +1003,7 @@
 
     <h2>Спасибо!</h2>
 
-    <h3>Ваша заявка отправлена.</h3>
+    <h3>Ваша заявка отправлена</h3>
     <h4>Через некоторое время с вами свяжется
         наш менеджер.</h4>
 </div>
