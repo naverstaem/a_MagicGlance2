@@ -9,6 +9,7 @@
 .navbar-brand
   text-transform: uppercase
   color: #3f3f3f !important
+  font-family: 'open_sansbold'
 .navbar-default
   border: none
   background: none
@@ -390,6 +391,8 @@ header
     > div
       &:nth-child(1)
         text-align: right
+      &:nth-child(2)
+        text-align: center
     &:last-child
       > div
         &:first-child
@@ -720,7 +723,7 @@ header
   .price-old
     color: #bcbcbc
     font-size: 22px
-    +osl
+    font-family: 'open_sanssemibold'
     padding: 0
     background: none
     text-align: right
@@ -729,9 +732,11 @@ header
     position: relative
     span
       font-size: 18px
+      +osl
     .crossline
       position: relative
       font-size: 22px
+      font-family: 'open_sanssemibold'
       &:after
         position: absolute
         top: 16px
@@ -924,52 +929,27 @@ footer
 
 
 @media (max-width: $screen-md-min)
+  header
+    .header__form
+      .form__img
+        .form__price
+          top: 60px
 
-//  .about__text--second
-//    margin-top: 0 !important
-//  .instruction__items
-//    .item__img
-//      &:after
-//        width: 0 !important
-//  .work
-//    h2
-//      top: 0 !important
-//    .row
-//      text-align: center !important
-//  .intro
-//    &__form
-//      background: rgb(150,208,247)
-//    &__img
-//      img
-//        width: 100%
-//  h1, .title
-//    font-size: 24px !important
-//
 @media (max-width: $screen-sm-min)
+  h2
+    font-size: 36px !important
   .navbar-default
     .navbar-nav
       li
         a
           &:hover, &:active, &:focus
             margin: 10px 15px
-//@media (max-width: $screen-xs-min)
-//  .intro__form
-//    .counter
-//      .bl
-//        margin: 0 4px !important
-//    .block__form
-//      form
-//        text-align: center !important
-//    .block__top
-//      text-align: center !important
-//  .work
-//    .reviews
-//      padding-top: 250px
-//  footer
-//    .footer__left, .footer__right
-//      float: none
-//      text-align: center
-//      margin-top: 10px
-//  .instruction
-//    h3
-//      padding: 0
+@media (max-width: $screen-xs-min)
+  .instruction
+    img
+      width: 100%
+  .features
+    &__items
+      .f-b
+        img
+          display: none
