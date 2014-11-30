@@ -1679,11 +1679,11 @@ body { font-size: 16px; line-height: 1.4; background: #fff; color: #1e1e1e; font
 
 .out { position: relative; }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
-input:-moz-placeholder, textarea:-moz-placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
-input::-moz-placeholder, textarea::-moz-placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
-input::placeholder, textarea::placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 12px; text-transform: none; color: #a3a3a3; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
+input:-moz-placeholder, textarea:-moz-placeholder { font-size: 12px; text-transform: none; color: #a3a3a3; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
+input::-moz-placeholder, textarea::-moz-placeholder { font-size: 12px; text-transform: none; color: #a3a3a3; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 12px; text-transform: none; color: #a3a3a3; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
+input::placeholder, textarea::placeholder { font-size: 12px; text-transform: none; color: #a3a3a3; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
 
 .fancybox-inner { -webkit-box-shadow: 0 38px 40px -40px black; box-shadow: 0 38px 40px -40px black; }
 
@@ -1875,22 +1875,25 @@ header .header__form .block__form .button--form span, .header--bottom .header__f
 .also h2 { line-height: 0.8; color: #3f3f3f; }
 .also h2:after { border-bottom: none; }
 .also__items { margin-top: 80px; text-align: center; }
-.also .item { background: url(../img/form_bg--bottom.png) no-repeat; text-align: center; display: inline-block; vertical-align: top; margin-top: 60px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-bottom: 40px; }
-.also .item .img { height: 271px; margin-top: -64px; display: inline-block; margin-bottom: 10px; }
-.also .item .img img { display: block; width: 100%; max-width: 305px; }
+.also .item { background: #fff; text-align: center; display: inline-block; vertical-align: top; margin-top: 60px; padding-bottom: 40px; -webkit-box-shadow: 0 30px 50px -30px black; box-shadow: 0 30px 50px -30px black; }
+.also .item .img { height: 285px; margin-top: -104px; display: inline-block; margin-bottom: 10px; }
+.also .item .img img { display: block; width: 100%; max-width: 285px; }
 .also .item .img--second { margin-top: -56px; margin-bottom: 2px; }
-.also .item h3 { font-size: 30px; font-family: "forumregular"; color: #ffffff; margin: 5px 0 17px; font-weight: normal; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.08); }
-.also .item .wave { width: 100%; height: 0; border-bottom: solid 1px rgba(255, 255, 255, 0.2); }
+.also .item h3 { font-size: 26px; font-family: "open_sanslight"; font-weight: normal; font-style: normal; color: #171717; margin: 5px 0 17px; }
+.also .item .wave { width: 125px; height: 5px; display: inline-block; background: url(../img/wave2.png) no-repeat; }
 .also .item p { font-size: 29px; color: #181818; text-transform: uppercase; }
 .also .price-b { margin: 0 0 20px; padding: 0 30px; }
-.also .price-old, .also .price-new { color: #cfe7f7; font-size: 30px; font-family: "forumregular"; padding: 0; background: none; text-align: right; width: 49%; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.08); display: inline-block; }
-.also .price-old span, .also .price-new span { font-size: 30px; }
-.also .price-new { background: none; color: #ffffff; text-align: left; font-family: "forumregular"; font-size: 48px; }
-.also .price-new span { font-size: 42px; }
+.also .price-old, .also .price-new { color: #bcbcbc; font-size: 22px; font-family: "open_sanslight"; font-weight: normal; font-style: normal; padding: 0; background: none; text-align: right; width: 40%; display: inline-block; position: relative; }
+.also .price-old span, .also .price-new span { font-size: 18px; }
+.also .price-old .crossline, .also .price-new .crossline { position: relative; font-size: 22px; }
+.also .price-old .crossline:after, .also .price-new .crossline:after { position: absolute; top: 16px; left: 0; right: 0; height: 0; border-bottom: solid 1px; content: ""; }
+.also .price-new { background: none; color: #171717; text-align: left; font-family: "open_sansbold"; font-weight: normal; font-style: normal; font-size: 34px; }
+.also .price-new span { font-size: 22px; font-family: "open_sanssemibold"; }
 .also form { padding: 0 35px; }
-.also input { width: 100%; height: 50px; margin-bottom: 14px; padding-left: 15px; font-size: 15px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; -webkit-box-shadow: inset 1px 2px 0 #86bee4; box-shadow: inset 1px 2px 0 #86bee4; border: none; }
+.also input { width: 100%; height: 50px; margin-bottom: 14px; padding-left: 15px; font-size: 15px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; border: 1px solid #e6e6e6; -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.06); box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.06); }
 .also input:focus { -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
-.also .btn--review { font-size: 18px; height: 48px; width: 100%; margin-top: 11px; font-family: "open_sansbold"; font-weight: normal; font-style: normal; }
+.also .btn--review { vertical-align: top; height: 59px; width: 100%; font-family: "open_sansbold"; font-weight: normal; font-style: normal; font-size: 20px; margin-top: 20px; }
+.also .btn--review span { position: relative; display: inline-block; background: url('../img/icons-s1083f25a08.png') 0 0 no-repeat; width: 16px; height: 12px; vertical-align: middle; left: 10px; }
 
 footer { box-sizing: border-box; background: url(../img/footer_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 40px 0; font-size: 14px; position: relative; color: #cdcdd5; }
 footer .footer__left { float: left; text-align: left; }
