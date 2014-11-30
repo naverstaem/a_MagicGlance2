@@ -1845,8 +1845,9 @@ header .header__form .block__form .button--form span, .header--bottom .header__f
 .reviews .img { text-align: center; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; height: 100px; }
 .reviews .img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin-top: 7px; -webkit-box-shadow: 0 16px 40px -20px black; box-shadow: 0 16px 40px -20px black; }
 .reviews .img:hover, .reviews .img.is-active { cursor: pointer; }
-.reviews .img:hover img, .reviews .img.is-active img { border: solid 7px rgba(255, 255, 255, 0.3); margin-top: 0; }
-.reviews__body { text-align: center; }
+.reviews .img:hover img, .reviews .img.is-active img { border: solid 7px rgba(255, 255, 255, 0.2); margin-top: 0; }
+.reviews__body { text-align: center; opacity: 0; visibility: hidden; height: 0; display: none; }
+.reviews__body.is-active { opacity: 1 !important; visibility: visible !important; height: auto !important; display: block; }
 .reviews__body-top { display: inline-block; }
 .reviews__body-top h3 { font-family: "open_sansbold"; font-weight: normal; font-style: normal; color: #ffffff; font-size: 20px; margin-top: 0; }
 .reviews__body-top h4 { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 13px; color: #9aaccc; }

@@ -35,8 +35,18 @@ head.ready(function() {
 //        $('.top').toggleClass('tiny', $(document).scrollTop() > 0);
 //    });
 
-
-
+    function tabs() {
+            var target = $(this).find('[data-target~="tab"]'),
+                el = $(this).find('[data-item~="tab"]');
+            target.bind("click", function() {
+                var index = $(this).attr("href");
+                target.parent().removeClass("is-active");
+                $(this).parent().addClass("is-active");
+                el.removeClass('is-active');
+                $(index).addClass('is-active');
+                return false;
+            });
+    } tabs();
 
     $('#form1').validate();
     $('#form2').validate();
@@ -46,6 +56,14 @@ head.ready(function() {
     $('#form6').validate();
 
     $("#form5").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
+    $("#form6").ajaxForm({
         success: function () {
             $(".thanks-link").trigger('click');
         },

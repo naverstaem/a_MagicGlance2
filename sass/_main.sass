@@ -542,10 +542,19 @@ header
     &:hover, &.is-active
       cursor: pointer
       img
-        border: solid 7px rgba(#fff,.3)
+        border: solid 7px rgba(#fff,.2)
         margin-top: 0
   &__body
     text-align: center
+    opacity: 0
+    visibility: hidden
+    height: 0
+    display: none
+    &.is-active
+      opacity: 1 !important
+      visibility: visible !important
+      height: auto !important
+      display: block !important
   &__body-top
     display: inline-block
     h3

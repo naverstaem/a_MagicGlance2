@@ -625,7 +625,7 @@
             </div>
 
         </div>
-        <div class="reviews">
+        <div class="reviews" id="reviews">
             <h2 class="title">Отзывы покупателей <span>Magic Glance</span></h2>
             <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <!-- Wrapper for slides -->
@@ -633,20 +633,30 @@
                     <div class="item active">
                       <div class="items">
                           <div class="row">
-                             <div class="col-md-2 col-md-offset-1">
-                                 <div class="img"><img src="img/slider-img1.png" alt="slider"/></div>
-                             </div>
-                              <div class="col-md-2">
-                                  <div class="img"><img src="img/slider-img2.png" alt="slider"/></div>
+                              <div class="col-md-2 col-md-offset-1">
+                                  <div class="img is-active">
+                                      <a href="#item1" data-target="tab"><img src="img/slider-img1.png" alt="slider"/></a>
+                                  </div>
                               </div>
                               <div class="col-md-2">
-                                  <div class="img is-active"><img src="img/slider-img2.png" alt="slider"/></div>
+                                  <div class="img">
+                                      <a href="#item2" data-target="tab"><img src="img/slider-img2.png" alt="slider"/></a>
+                                  </div>
                               </div>
                               <div class="col-md-2">
-                                  <div class="img"><img src="img/slider-img4.png" alt="slider"/></div>
+                                  <div class="img">
+                                      <a href="#item3" data-target="tab"><img src="img/slider-img3.png" alt="slider"/></a>
+                                  </div>
                               </div>
                               <div class="col-md-2">
-                                  <div class="img"><img src="img/slider-img5.png" alt="slider"/></div>
+                                  <div class="img">
+                                      <a href="#item4" data-target="tab"><img src="img/slider-img4.png" alt="slider"/></a>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="img">
+                                      <a href="#item5" data-target="tab"><img src="img/slider-img5.png" alt="slider"/></a>
+                                  </div>
                               </div>
 
                           </div>
@@ -657,19 +667,29 @@
                         <div class="items">
                             <div class="row">
                                 <div class="col-md-2 col-md-offset-1">
-                                    <div class="img"><img src="img/slider-img5.png" alt="slider"/></div>
+                                    <div class="img">
+                                        <a href="#item1" data-target="tab"><img src="img/slider-img5.png" alt="slider"/></a>
+                                    </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="img"><img src="img/slider-img4.png" alt="slider"/></div>
+                                    <div class="img">
+                                    <a href="#item2" data-target="tab"><img src="img/slider-img4.png" alt="slider"/></a>
+                                    </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="img is-active"><img src="img/slider-img2.png" alt="slider"/></div>
+                                    <div class="img">
+                                        <a href="#item3" data-target="tab"><img src="img/slider-img2.png" alt="slider"/></a>
+                                    </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="img"><img src="img/slider-img2.png" alt="slider"/></div>
+                                    <div class="img">
+                                        <a href="#item4" data-target="tab"><img src="img/slider-img3.png" alt="slider"/></a>
+                                    </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="img"><img src="img/slider-img1.png" alt="slider"/></div>
+                                    <div class="img">
+                                        <a href="#item5" data-target="tab"><img src="img/slider-img1.png" alt="slider"/></a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -686,7 +706,7 @@
                     <span class="pull-right"></span>
                 </a>
             </div>
-            <div class="reviews__body">
+            <div class="reviews__body is-active" id="item1" data-item = "tab">
                 <div class="reviews__body-top">
                     <h3>Виктория Иванова</h3>
                     <h4>25 сен 2014, г. Москва</h4>
@@ -703,6 +723,86 @@
                         Здесь ваш текст..</p>
                 </div>
                      </div>
+                </div>
+
+            </div>
+            <div class="reviews__body" id="item2" data-item = "tab">
+                <div class="reviews__body-top">
+                    <h3>Виктория Иванова</h3>
+                    <h4>25 сен 2014, г. Москва</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="reviews__body-text">
+                            <div class="quotes"><span></span><img src="img/quotes.png" alt="quotes"/><span></span></div>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый
+                                текст мешает сосредоточиться. Lorem Ipsum используют потому,
+                                что тот обеспечивает более или менее стандартное заполнение шаблона,
+                                а также реальное распределение букв и пробелов в абзацах,
+                                которое не получается при простой дубликации "Здесь ваш текст..
+                                Здесь ваш текст..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="reviews__body" id="item3" data-item = "tab">
+                <div class="reviews__body-top">
+                    <h3>Виктория Иванова</h3>
+                    <h4>25 сен 2014, г. Москва</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="reviews__body-text">
+                            <div class="quotes"><span></span><img src="img/quotes.png" alt="quotes"/><span></span></div>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый
+                                текст мешает сосредоточиться. Lorem Ipsum используют потому,
+                                что тот обеспечивает более или менее стандартное заполнение шаблона,
+                                а также реальное распределение букв и пробелов в абзацах,
+                                которое не получается при простой дубликации "Здесь ваш текст..
+                                Здесь ваш текст..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="reviews__body" id="item4" data-item = "tab">
+                <div class="reviews__body-top">
+                    <h3>Виктория Иванова</h3>
+                    <h4>25 сен 2014, г. Москва</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="reviews__body-text">
+                            <div class="quotes"><span></span><img src="img/quotes.png" alt="quotes"/><span></span></div>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый
+                                текст мешает сосредоточиться. Lorem Ipsum используют потому,
+                                что тот обеспечивает более или менее стандартное заполнение шаблона,
+                                а также реальное распределение букв и пробелов в абзацах,
+                                которое не получается при простой дубликации "Здесь ваш текст..
+                                Здесь ваш текст..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="reviews__body" id="item5" data-item = "tab">
+                <div class="reviews__body-top">
+                    <h3>Виктория Иванова</h3>
+                    <h4>25 сен 2014, г. Москва</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="reviews__body-text">
+                            <div class="quotes"><span></span><img src="img/quotes.png" alt="quotes"/><span></span></div>
+                            <p>Давно выяснено, что при оценке дизайна и композиции читаемый
+                                текст мешает сосредоточиться. Lorem Ipsum используют потому,
+                                что тот обеспечивает более или менее стандартное заполнение шаблона,
+                                а также реальное распределение букв и пробелов в абзацах,
+                                которое не получается при простой дубликации "Здесь ваш текст..
+                                Здесь ваш текст..</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
