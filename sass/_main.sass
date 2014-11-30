@@ -593,13 +593,14 @@ header
 
 .work
   padding-top: 40px
+  padding-bottom: 80px
   .row
     position: relative
     > div
       &:after
         position: absolute
         border: solid 1px rgba(#5ccece, .1)
-        top: 134px
+        top: 132px
         width: 100%
         left: 0
         height: 0
@@ -611,7 +612,25 @@ header
   &__img
     display: inline-block
     text-align: center
-    min-height: 97px
+    min-height: 49px
+  &__circle
+    margin: 23px auto 0
+    +border-radius(50%)
+    width: 22px
+    height: 22px
+    border: solid 1px #5ccdcd
+    &.first
+      margin-left: 90px
+    span
+      position: relative
+      width: 8px
+      height: 8px
+      top: -2px
+      background: #5ccdcd
+      +border-radius(50%)
+      display: inline-block
+
+
   p
     +osl
     font-size: 14px
@@ -636,19 +655,21 @@ header
 
 
 .header--bottom
-  background: url(../img/header--bottom_bg.jpg) center center no-repeat
+  @extend header
+  background: url(../img/header--bottom_bg.jpg)
   +cover
   position: relative
-  padding-top: 500px
+  padding-top: 40px
 
   .intro__form--bottom
     position: relative
     top: 135px
+
 .also
   +clr
   padding-top: 160px
   padding-bottom: 90px
-
+  background: rgb(0,46,130)
   h2
     line-height: .8
     color: #3f3f3f
